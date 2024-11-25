@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Utama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <style>
+      .fff {
+        background-color: white;
+      }
+      .fff:hover {
+        background-color: black;
+        color: black;
+      }
+      footer {
+        padding: 0;
+        text-align: center;
+        opacity: 70%;
+        margin-top: 50px;
+      }
+      @media (max-width: 992px) {
+        .ggg {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left"
+      style="width: 200px"
+      id="mySidebar"
+    >
+      <button
+        class="w3-bar-item w3-button w3-large w3-hide-large w3-black"
+        onclick="w3_close()"
+      >
+        Close &times;
+      </button>
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-black"
+        ><h4><i class="fa-solid fa-house"></i> Halaman utama</h4></a
+      >
+      <a href="manfaat-terapi.html" class="w3-bar-item w3-button w3-hover-black"
+        >Manfaat terapi</a
+      >
+      <a href="cara-kerja-terapi.html" class="w3-bar-item w3-button w3-hover-black"
+        >Cara kerja terapi</a
+      >
+      <a href="asal-usul-terapi.html" class="w3-bar-item w3-button w3-hover-black"
+        >Asal usul terapi</a
+      >
+      <a
+        href="perbedaan-akupuntur-dan-akupuntur-myo.html"
+        class="w3-bar-item w3-button w3-hover-black"
+        >Perbedaan akupuntur biasa dan myo</a
+      >
+      <a href="penyakit-yang-bisa-diterapi.html" class="w3-bar-item w3-button w3-hover-black"
+        >Penyakit yang bisa di terapi</a
+      >
+      <a
+        href="penyakit-yang-tidak-bisa-diterapi.html"
+        class="w3-bar-item w3-button w3-hover-black"
+        >Penyakit yang tidak bisa di terapi</a
+      >
+      <a href="penjelasan-qi-lebih-lanjut.html" class="w3-bar-item w3-button w3-hover-black"
+        >Penjelasan "QI" lebih lanjut</a
+      >
+    </div>
+
+    <div class="w3-main" style="margin-left: 200px">
+      <div class="w3-black">
+        <button
+          class="w3-button w3-black w3-xlarge w3-hide-large"
+          onclick="w3_open()"
+        >
+          &#9776;
+        </button>
+        <div class="w3-container">
+          <h1>Halaman Utama</h1>
+        </div>
+      </div>
+
+      <div class="w3-container ggg">
+        <h3 style="font-weight: 500">Selamat datang</h3>
+        <p>
+          Selamat datang di web ini, ini adalah web praktek dan jika ada
+          kesalahan pada web ini atau sebagainya tolong berikan saran.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; <span id="currentYear"></span> V2.1.2</p>
+    </footer>
+
+    <script src="FontAwesome/js/fontawesome.min.js"></script>
+    <script src="FontAwesome/js/solid.min.js"></script>
+    <script src="js.js"></script>
+    <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
